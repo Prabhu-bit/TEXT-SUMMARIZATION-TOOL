@@ -1,5 +1,0 @@
-transformers
-torch
-streamlit
-newspaper3k
-pdfplumber
