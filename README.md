@@ -13,14 +13,17 @@ DURATION : 4 WEEKS
 MENTOR : NEELA SANTOSH
 
 Description :
+
 This project, titled "AI Text Summarization Tool", was developed as part of Task 1 for the CodTech IT Solutions, Artificial Intelligence Internship. The goal of the task was to design and implement a tool that leverages Natural Language Processing (NLP) techniques to summarize lengthy articles or text documents into concise, meaningful outputs. The solution had to be implemented in Python, showcasing practical usage of NLP models and tools.
 
 To make the tool accessible and easy to use, the project was developed using Gradio, a Python library that enables quick creation of web-based user interfaces for machine learning models. Gradio allowed me to deploy a simple yet effective frontend directly from a Python script, making the tool look like a web application while still being lightweight and easy to run locally or on Colab.
 
 🔍 Objective of the Tool :
+
 The primary purpose of this summarization tool is to reduce the length of textual content without losing its core meaning. In today’s information-rich environment, being able to quickly grasp the main idea of a document is critical. This tool addresses that need by using powerful transformer-based models trained for summarization tasks.
 
 ⚙️ How It Works :
+
 The backend logic of the tool is powered by the Hugging Face Transformers library. Specifically, the project uses the facebook/bart-large-cnn model—a state-of-the-art abstractive summarization model. Unlike extractive models that pick important sentences from the original text, abstractive models like BART rephrase the text and generate new, concise sentences that retain the original meaning.
 
 When the user enters or pastes a block of text into the Gradio interface and clicks the “Summarize” button, the input text is passed to the backend Python function. The model processes the input and returns a short summary. The summarized output is then displayed on the same interface, giving the user immediate results.
