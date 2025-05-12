@@ -1,0 +1,53 @@
+!pip install gradio transformers newspaper3k pdfplumber
+
+from transformers import pipeline
+from newspaper import Article
+import pdfplumber
+import gradio as gr
+
+# Load summarization model
+summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+
+# 🔸 Summarize plain text
+def summarize_text(text):
+    summary = summarizer(text, max_length=200, min_length=60, do_sample=False)
+    return summary[0]['summary_text']
+
+# 🔸 Summarize from PDF file
+def summarize_pdf(pdf_file):
+    with pdfplumber.open(pdf_file.name) as pdf:
+        text = "".join([page.extract_text() or "" for page in pdf.pages])
+    summary = summarizer(text, max_length=200, min_length=60, do_sample=False)
+    return summary[0]['summary_text']
+
+# 🔸 Summarize from URL
+def summarize_url(url):
+    article = Article(url)
+    article.download()
+    article.parse()
+    summary = summarizer(article.text, max_length=200, min_length=60, do_sample=False)
+    return summary[0]['summary_text']
+
+# 🔸 Gradio App with Tabs
+with gr.Blocks() as demo:
+    gr.Markdown("# 🧠 AI Text Summarizer\nSummarize plain text, PDFs, or web articles.")
+
+    with gr.Tab("📝 Text"):
+        input_text = gr.Textbox(label="Enter your text", lines=10)
+        output_text = gr.Textbox(label="Summary")
+        btn1 = gr.Button("Summarize")
+        btn1.click(fn=summarize_text, inputs=input_text, outputs=output_text)
+
+    with gr.Tab("📄 PDF"):
+        pdf_input = gr.File(label="Upload PDF", file_types=[".pdf"])
+        pdf_output = gr.Textbox(label="Summary")
+        btn2 = gr.Button("Summarize")
+        btn2.click(fn=summarize_pdf, inputs=pdf_input, outputs=pdf_output)
+
+    with gr.Tab("🌐 URL"):
+        url_input = gr.Textbox(label="Paste article URL")
+        url_output = gr.Textbox(label="Summary")
+        btn3 = gr.Button("Summarize")
+        btn3.click(fn=summarize_url, inputs=url_input, outputs=url_output)
+
+demo.launch()
