@@ -1,0 +1,13 @@
+# TEXT-FORMAT
+
+Artificial Intelligence (AI) is a branch of computer science that aims to create machines capable of intelligent behavior. It involves developing algorithms that enable computers to perform tasks that typically require human intelligence, such as reasoning, learning, problem-solving, perception, and language understanding. AI is categorized into two types: narrow AI, which is designed for specific tasks like facial recognition or language translation, and general AI, which would be capable of performing any intellectual task that a human can do.
+With advancements in machine learning, deep learning, and neural networks, AI has made significant progress in recent years. Applications of AI span across various industries including healthcare, finance, automotive, and education. In healthcare, AI assists in diagnosing diseases and personalizing treatment plans. In the automotive sector, it plays a key role in the development of autonomous vehicles. Despite its benefits, AI also raises ethical concerns regarding privacy, bias in decision-making algorithms, and the future of employment.
+
+# PDF FORMAT
+
+"sample_ai_healthcare.pdf"
+
+# URL FORMAT
+
+https://www.ibm.com/cloud/learn/what-is-artificial-intelligence
+
