@@ -65,3 +65,7 @@ Creating automatic summaries for content-heavy websites
 The AI Text Summarization Tool built using Gradio and Transformers provides a simple, effective solution for automatic text summarization. It demonstrates the integration of NLP models into usable tools with minimal overhead. This project fulfills the requirements of Task 1 in the CodTech internship and highlights skills in machine learning, NLP, and interactive AI app development.
 
 This tool lays the foundation for future extensions like summarizing from PDFs, URLs, or text inputs, and supports the broader vision of building accessible, AI-powered productivity tools for real-world users.
+
+#OUTPUT
+
+![Image](https://github.com/user-attachments/assets/dba43cde-41bf-4f03-813a-06f120556539)
