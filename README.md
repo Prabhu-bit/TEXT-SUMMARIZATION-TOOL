@@ -69,3 +69,5 @@ This tool lays the foundation for future extensions like summarizing from PDFs, 
 #OUTPUT
 
 ![Image](https://github.com/user-attachments/assets/dba43cde-41bf-4f03-813a-06f120556539)
+
+![Image](https://github.com/user-attachments/assets/802de332-b4cd-40f7-b901-aa4dbf3ccf06)
