@@ -71,3 +71,5 @@ This tool lays the foundation for future extensions like summarizing from PDFs, 
 ![Image](https://github.com/user-attachments/assets/dba43cde-41bf-4f03-813a-06f120556539)
 
 ![Image](https://github.com/user-attachments/assets/802de332-b4cd-40f7-b901-aa4dbf3ccf06)
+
+![Image](https://github.com/user-attachments/assets/cda4af78-46ff-424f-9a44-2cddf2ce8ca6)
