@@ -1,19 +1,5 @@
 # TEXT-SUMMARIZATION-TOOL
 
-COMPANY : CODTECH IT SOLUTIONS
-
-NAME : BASAVAPRABHU R HALAKATTI
-
-INTERN ID : CT04DL919
-
-DOMAIN : ARTIFICIAL INTELLIGENCE
-
-DURATION : 4 WEEKS
-
-MENTOR : NEELA SANTOSH
-
-Description :
-
 This project, titled "AI Text Summarization Tool", was developed as part of Task 1 for the CodTech IT Solutions, Artificial Intelligence Internship. The goal of the task was to design and implement a tool that leverages Natural Language Processing (NLP) techniques to summarize lengthy articles or text documents into concise, meaningful outputs. The solution had to be implemented in Python, showcasing practical usage of NLP models and tools.
 
 To make the tool accessible and easy to use, the project was developed using Gradio, a Python library that enables quick creation of web-based user interfaces for machine learning models. Gradio allowed me to deploy a simple yet effective frontend directly from a Python script, making the tool look like a web application while still being lightweight and easy to run locally or on Colab.
